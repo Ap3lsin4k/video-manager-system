@@ -1,0 +1,42 @@
+﻿<Window x:Class="VMS.View.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VMS.View"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="800"
+        MinWidth="800" MaxHeight="450"
+        WindowStyle="None"
+        Background="#28353B"
+        UseLayoutRounding="True">
+    <Grid ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40.8"></RowDefinition>
+            <RowDefinition Height="223.2"></RowDefinition>
+            <RowDefinition Height="135.2"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Image RenderOptions.BitmapScalingMode="NearestNeighbor" Grid.Column="0" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="40" Source="D:\project\VMS\VMS\VMS\Design\LOGO3.png" Grid.Row="1"/>
+        <Label Grid.Column="0" Grid.Row="1" Padding="0,0,0,0" Content="VMS Security Interface" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" FontSize="22" Foreground="White" Height="29" Margin="0,0,0,1"></Label>
+
+
+        <Rectangle Grid.Column="1" Grid.RowSpan="4" Fill="#5992BD" Margin="0,0,-0.4,0.2" ></Rectangle>
+        <Button Grid.Column="1" Margin="0,10,9.6,0" Grid.Row="0" Background="Transparent" Content="Forgot password" BorderThickness="0" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="18" Height="26" Width="135"></Button>
+
+        <Label Margin="20" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="34" Foreground="#2B2A29" Content="Account Login" Height="56" Width="226"></Label>
+        <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Margin="90,0,90,0"  Height="50" Text="User" Padding="4" FontSize="30"></TextBox>
+        <TextBox Grid.Column="1" Grid.Row="1" VerticalAlignment="Bottom" Margin="90,0,90,0"  Height="50" Text="Passowrd" Padding="4" FontSize="30"></TextBox>
+
+        <CheckBox Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" Margin="110,20,0,0" Content="Remember password" FontSize="12" VerticalAlignment="Top"></CheckBox>
+        <CheckBox Grid.Column="1" Grid.Row="2" HorizontalAlignment="Right" Margin="0,20,110,0" Content="Auto Login" VerticalAlignment="Top"></CheckBox>
+        <Button Content="Login" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Bottom" Padding="20,-5,20,0" FontSize="40"></Button>
+    </Grid>
+
+
+</Window>
