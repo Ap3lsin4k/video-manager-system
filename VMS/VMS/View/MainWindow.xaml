@@ -5,8 +5,116 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VMS"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="800"
+        MaxHeight="450" MaxWidth="800"
+        WindowStyle="None"
+        Background="#000000">
+    <Grid ShowGridLines="False">
         
+        <Grid.RowDefinitions>
+            <RowDefinition Height="18"></RowDefinition>
+            <RowDefinition Height="45">
+            </RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Grid Grid.Row="1" ShowGridLines="False">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="40"></ColumnDefinition>
+                <ColumnDefinition Width="40"></ColumnDefinition>
+                <ColumnDefinition Width="40"></ColumnDefinition>
+                <ColumnDefinition Width="40"></ColumnDefinition>
+                <ColumnDefinition Width="40"></ColumnDefinition>
+                <ColumnDefinition Width="40"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Rectangle Grid.Column="0" Grid.ColumnSpan="7" Fill="#5992BD"></Rectangle>
+            <Image Grid.Column="0" Source="D:\project\VMS\VMS\VMS\Design\Cloud.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="6"></Image>
+            <Image Grid.Column="1" Source="D:\project\VMS\VMS\VMS\Design\grid.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="7"></Image>
+            <Image Grid.Column="2" Source="D:\project\VMS\VMS\VMS\Design\idcard.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"></Image>
+            <Image Grid.Column="3" Source="D:\project\VMS\VMS\VMS\Design\add.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="6"></Image>
+            <Image Grid.Column="4" Source="D:\project\VMS\VMS\VMS\Design\plugins.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="6"></Image>
+            <Image Grid.Column="5" Source="D:\project\VMS\VMS\VMS\Design\settings.png" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="6"></Image>
+            <Image Grid.Column="6" Source="D:\project\VMS\VMS\VMS\Design\Logo3.png" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,4,70,0" Height="25"></Image>
+            <Label Grid.Column="6" Content="BYSEC" HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="18" HorizontalContentAlignment="Left" Padding="0,0,0,0" Margin="0,0,20,0" Foreground="White"></Label>
+            <Label Grid.Column="6" Content="Secure Your Life" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="5" HorizontalContentAlignment="Left" Padding="0,0,0,0" Margin="0,0,21,19" Foreground="White"></Label>
+        </Grid>
+
+        <Grid Grid.Row="3" ShowGridLines="False">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="125"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20" Source="D:\project\VMS\VMS\VMS\Design\alarm.png"></Image>
+                <Image Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20" Source="D:\project\VMS\VMS\VMS\Design\Net.png"></Image>
+                
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Border Grid.Column="0" Grid.Row="0" Margin="50,10,0,10" Background="Gray"/>
+                <Border Grid.Column="1" Grid.Row="0" Margin="25,10,25,10" Background="Gray"/>
+                <Border Grid.Column="2" Grid.Row="0" Margin="0,10,50,10" Background="Gray"/>
+                <Border Grid.Column="0" Grid.Row="1" Margin="50,10,0,10" Background="Gray"/>
+                <Border Grid.Column="2" Grid.Row="1" Margin="0,10,50,10" Background="Gray"/>
+                <Border Grid.Column="0" Grid.Row="2" Margin="50,10,0,10" Background="Gray"/>
+                <Border Grid.Column="1" Grid.Row="2" Margin="25,10,25,10" Background="Gray"/>
+                <Border Grid.Column="2" Grid.Row="2" Margin="0,10,50,10" Background="Gray"/>
+                <Border Grid.Column="1" Grid.Row="1" Margin="25,10,25,10" CornerRadius="10" Background="Gray"/>
+
+                    <MediaElement Grid.Column="0" Grid.Row="0" Margin="50,10,0,10" />
+                    <MediaElement Grid.Column="1" Grid.Row="0" Margin="25,10,25,10" />
+                    <MediaElement Grid.Column="2" Grid.Row="0" Margin="0,10,50,10"  />
+                    <MediaElement Grid.Column="0" Grid.Row="1" Margin="50,10,0,10"  />
+                    <MediaElement Grid.Column="2" Grid.Row="1" Margin="0,10,50,10"  />
+                    <MediaElement Grid.Column="0" Grid.Row="2" Margin="50,10,0,10"  />
+                    <MediaElement Grid.Column="1" Grid.Row="2" Margin="25,10,25,10"  />
+                    <MediaElement Grid.Column="1" Grid.Row="1" Margin="25,10,25,10"  />
+                    <MediaElement Grid.Column="2" Grid.Row="2" Margin="0,10,50,10"  />
+
+                
+
+
+            </Grid>
+        </Grid>
+
+        
+        
+        <Menu Grid.Row="0" VerticalAlignment="Top" Background="#5992BD">
+            <MenuItem Header="File">
+                <MenuItem Header="Open File"></MenuItem>
+                <MenuItem Header="Save File"></MenuItem>
+                <MenuItem Header="Lock"></MenuItem>
+                <MenuItem Header="Exit"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="View">
+                <CheckBox Content="Fullscreen"></CheckBox>
+                <CheckBox Content="Switch"></CheckBox>
+                <MenuItem Header="Grid Views"></MenuItem>
+                <MenuItem Header="Clear All Capture"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="About"></MenuItem>
+                <MenuItem Header="Support"></MenuItem>
+                <MenuItem Header="Go To Website"></MenuItem>
+            </MenuItem>
+        </Menu>
+
+
     </Grid>
 </Window>
